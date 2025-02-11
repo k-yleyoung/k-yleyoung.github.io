@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern portfolio website to showcase personal work.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "projects"
+  ],
+  "author": "Kyle Young",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://kyleyoung.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-yleyoung/portfolio-website.git"
+  }
+}
