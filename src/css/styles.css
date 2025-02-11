@@ -7,6 +7,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
+html, body {
+  height: 100%;
+  background-color: #121212; /* Ensure the background color is black */
+}
+
 header {
   text-align: center;
   padding: 2rem 0;
