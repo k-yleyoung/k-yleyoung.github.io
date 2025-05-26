@@ -31,9 +31,16 @@
       margin-right: 8px;
     }
     .logo {
-      color: white;
-      font-weight: 700;
-      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 9.47px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .hotspot-form {
       max-width: 800px;
@@ -49,7 +56,9 @@
       <a href="crowd-track.html" class="back-link">
         <i class="fas fa-arrow-left"></i> Back to Crowd Track
       </a>
-      <div class="logo">Crowd Track</div>
+      <a href="https://testflight.apple.com/join/YOUR_TESTFLIGHT_LINK" target="_blank" class="logo" style="display: block; text-decoration: none;">
+        <img src="../assets/appstore.png" alt="Crowd Track Logo">
+      </a>
     </div>
   </header>
 
