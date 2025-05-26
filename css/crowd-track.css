@@ -333,18 +333,6 @@ textarea.form-control {
   padding: 0 22px;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.footer-links a {
-  color: #86868B;
-  margin: 0 15px;
-  text-decoration: none;
-}
 
 .footer-links a:hover {
   text-decoration: underline;
