@@ -3,50 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crowd Track – iOS App</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Crowd Track - Know before you go. Real-time crowd analytics for smarter decisions.">
+  <title>Crowd Track | Real-time Crowd Analytics</title>
+  <link rel="stylesheet" href="../css/crowd-track.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Adjust section spacing */
+    .features, .screenshots, .contact, .app-showcase {
+      padding: 50px 0;
+    }
+    
+    /* App showcase section */
+    .app-showcase {
+      text-align: center;
+      background-color: var(--system-background-secondary);
+    }
+    
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 22.5%;
+      margin: 0 auto 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(135deg, #007AFF, #34C759);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    
+    .download-buttons {
+      margin-top: 20px;
+    }
+    
+    .app-badge {
+      margin: 0 10px 15px;
+      height: 50px;
+      transition: transform 0.2s ease;
+    }
+    
+    .app-badge:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Crowd Track – iOS App</h1>
-    <p><a href="../index.html">Back to Portfolio</a></p>
+<body style="background-color: #000000;">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </nav>
+
+  <!-- Header with App Showcase -->
+  <header class="header" style="padding: 15px 0 40px; position: relative; background-color: #000000; border-bottom: 1px solid #2C2C2E;">
+    <div class="container">
+      <!-- Logo and Hero Text -->
+      <div style="padding-top: 20px; text-align: center; position: relative; z-index: 2;">
+        <span class="logo" style="font-size: 24px; margin-bottom: 10px; display: block;">Crowd Track</span>
+        <div class="hero">
+          <h1>Know before you go.</h1>
+          <p>Real-time crowd analytics to help you make smarter decisions about when to visit your favorite places.</p>
+        </div>
+      </div>
+      
+      <!-- App Icon and Download Button -->
+      <div style="position: relative; margin-top: 60px; text-align: center;">
+        <div class="app-icon" style="width: 140px; height: 140px; font-size: 65px; font-weight: 800; margin: 0 auto 25px; background: linear-gradient(135deg, #007AFF, #34C759);">CT</div>
+        <div class="download-buttons">
+          <a href="https://testflight.apple.com/join/YOUR_TESTFLIGHT_LINK" target="_blank" class="btn" style="background: #000; color: #fff; border: 2px solid #fff; width: auto; padding: 12px 40px; font-size: 18px; font-weight: 600; border-radius: 12px; display: inline-block; transition: all 0.2s ease;">
+            Download on the App Store
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
-  
-  <section id="crowd-track">
-    <h2>About Crowd Track</h2>
-    <p>Crowd Track is a full-stack iOS app developed using SwiftUI that helps users determine how busy certain locations are in the present and future based on real-time and historical data using interactive graphs.</p>
-    <p>Currently in beta-testing.</p>
-    
-    <h2>Features</h2>
-    <ul>
-      <li>Real-time data management and analytics with Firebase.</li>
-      <li>Interactive graphs to visualize data.</li>
-      <li>Historical data analysis to predict future crowd levels.</li>
-    </ul>
-    
-    <h2>Technologies Used</h2>
-    <ul>
-      <li>SwiftUI for front-end development.</li>
-      <li>Firebase for backend and real-time data management.</li>
-      <li>Graphing libraries for interactive data visualization.</li>
-    </ul>
-    
-    <h2>Demo</h2>
-    <p>Check out the demo of Crowd Track: <a href="https://tinyurl.com/Crowd-Track" target="_blank">https://tinyurl.com/Crowd-Track</a></p>
-    
-    <!-- <h2>Screenshots</h2>
-    <div class="screenshots">
-      <img src="images/crowd-track-1.png" alt="Crowd Track Screenshot 1">
-      <img src="images/crowd-track-2.png" alt="Crowd Track Screenshot 2">
-      <img src="images/crowd-track-3.png" alt="Crowd Track Screenshot 3">
-    </div> -->
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title animate-fade-in">Features</h2>
+      <p class="section-subtitle animate-fade-in delay-1">Designed to help you avoid the crowds and save time.</p>
+      
+      <div class="features-grid">
+        <div class="feature-card animate-fade-in delay-1">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Real-time Data</h3>
+          <p>Get up-to-the-minute crowd information for any location, so you can plan your visits with confidence.</p>
+        </div>
+        
+        <div class="feature-card animate-fade-in delay-2">
+          <div class="feature-icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <h3>Historical Insights</h3>
+          <p>View historical trends to predict future crowd levels and find the best times to visit your favorite spots.</p>
+        </div>
+        
+        <div class="feature-card animate-fade-in delay-3">
+          <div class="feature-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Crowd Predictions</h3>
+          <p>Get accurate predictions about crowd levels based on historical data and current trends.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Kyle Young</p>
+  <!-- Screenshots Section -->
+  <section class="screenshots">
+    <div class="container">
+      <h2 class="section-title">Sneak Peek</h2>
+      
+      <div class="screenshot-container">
+        <!-- Replace these with actual screenshots -->
+        <img src="../images/placeholder-screenshot1.png" alt="Crowd Track Home Screen" class="screenshot">
+        <img src="../images/placeholder-screenshot2.png" alt="Crowd Track Analytics" class="screenshot">
+        <img src="../images/placeholder-screenshot3.png" alt="Crowd Track Location Details" class="screenshot">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+      <div class="feature-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <div class="feature-icon">
+          <i class="fas fa-plus-circle"></i>
+        </div>
+        <h3>Don't See Your Spot?</h3>
+        <p>Help us track crowd levels at your favorite locations by requesting to add them to Crowd Track.</p>
+        <a href="hotspot-request.html" class="btn" style="margin-top: 20px; display: inline-block; width: auto; padding: 12px 30px;">
+          Request a Hotspot
+        </a>
+      </div>
+      
+      <div style="text-align: center; margin-top: 40px;">
+        <h3>Have Questions?</h3>
+        <p>Reach out to me at <a href="mailto:kyle@kyleyoung.dev">kyle@kyleyoung.dev</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Crowd Track</div>
+      <p>Making your outings smarter, one crowd at a time.</p>
+      
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="hotspot-request.html">Request a Hotspot</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="social-links">
+        <a href="mailto:contact@kyleyoung.dev" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      
+      <p class="copyright">&copy; 2025 Kyle Young. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="js/scripts.js"></script>
+  <script>
+    // Simple form submission handler
+    document.getElementById('hotspotForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      
+      // You can add your form submission logic here
+      // For now, we'll just show a success message
+      alert('Thank you for your interest in Crowd Track! We\'ll be in touch soon.');
+      form.reset();
+      
+      // If using Formspree or similar, you would uncomment this:
+      /*
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Thank you for your interest in Crowd Track! We\'ll be in touch soon.');
+          form.reset();
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('There was a problem submitting the form. Please try again later.');
+      });
+      */
+    });
+    
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

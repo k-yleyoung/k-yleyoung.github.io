@@ -3,80 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kyle Young - Portfolio</title>
-  <link rel="stylesheet" href="src/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Kyle Young</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/apple-styles.css">
 </head>
 <body>
-  <header>
-    <h1>Kyle Young</h1>
-    <p><a href="mailto:kyle@kyleyoung.dev">Email</a> | <a href="https://www.linkedin.com/in/kyle--young/" target="_blank">LinkedIn</a> | <a href="https://github.com/k-yleyoung" target="_blank">GitHub</a></p>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#work-experience">Work Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <header class="app-header">
+      <div class="header-content">
+        <h1>Kyle Young</h1>
+        <div class="header-links">
+          <a href="mailto:kyle@kyleyoung.dev" class="btn btn-ghost">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kyle--young/" target="_blank" class="btn btn-ghost">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/k-yleyoung" target="_blank" class="btn btn-ghost">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </header>
 
-  <section id="projects">
-    <h2>Project Experience</h2>
-    <h3><a href="src/crowd-track.html">Crowd Track – iOS App</a></h3>
-    <p>2024 – Present</p>
-    <ul>
-      <li>Developed a full-stack SwiftUI app that helps users determine how busy certain locations are in the present and future based on real-time and historical data using interactive graphs.</li>
-      <li>Implemented a robust backend with Firebase for real-time data management and analytics.</li>
-      <li><strong>Demo:</strong> <a href="https://tinyurl.com/Crowd-Track" target="_blank">https://tinyurl.com/Crowd-Track</a></li>
-    </ul>
-    <h3>Columbia News and Weather Website</h3>
-    <p>2023</p>
-    <ul>
-      <li>Uses Python web scraping to display plain text view of Columbia Tribune top headlines.</li>
-      <li>Includes current weather information via Weather API.</li>
-      <li>Displays current date and time.</li>
-    </ul>
-  </section>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#work-experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+      </ul>
+    </nav>
 
-  <section id="work-experience">
-    <h2>Work Experience</h2>
-    <h3>Software Engineer Intern | Veterans United Home Loans</h3>
-    <p>May – August 2024</p>
-    <ul>
-      <li>Worked in a team of 6, utilizing Agile methodologies and pair programming.</li>
-      <li>Developed and maintained RESTful APIs using the .NET MVC framework and Test-Driven Development (TDD).</li>
-      <li>Managed code with GitLab and Azure DevOps for version control and CI/CD integration.</li>
-      <li>Utilized Visual Studio and Mia-Platform for development, debugging, and project management.</li>
-    </ul>
-    <h3>Data Engineer Intern | World Agricultural Economic and Environmental Services</h3>
-    <p>January – May 2024</p>
-    <ul>
-      <li>Developed and maintained Python-based automation solutions for the extraction and processing of USDA commodity data.</li>
-      <li>Implemented new website functionalities, significantly improving client user-experience.</li>
-    </ul>
-  </section>
+    <main class="content">
+      <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
+              <a href="src/crowd-track.html" class="card-link">Crowd Track – iOS App</a>
+            </h3>
+            <span class="card-badge">2024 – Present</span>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li>Developed a full-stack SwiftUI app that helps users determine how busy certain locations are in the present and future based on real-time and historical data using interactive graphs.</li>
+              <li>Implemented a robust backend with Firebase for real-time data management and analytics.</li>
+            </ul>
+          </div>
+        </div>
 
-  <section id="education">
-    <h2>Education</h2>
-    <h3>University of Missouri | B.S. Computer Science</h3>
-    <p>2022 – Present</p>
-  </section>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Columbia News and Weather Website</h3>
+            <span class="card-badge">2023</span>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li>Uses Python web scraping to display plain text view of Columbia Tribune top headlines.</li>
+              <li>Includes current weather information via Weather API.</li>
+              <li>Displays current date and time.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> C, Python, SwiftUI, C#, Java, HTML/CSS</li>
-      <li><strong>Tools & Technologies:</strong> Visual Studio Code, Visual Studio, Node.js, Firebase, Google Cloud, React</li>
-      <li><strong>Concepts:</strong> Object-Oriented Programming, Full-Stack iOS App Development</li>
-    </ul>
-  </section>
+      <section id="work-experience" class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Software Engineer Intern</h3>
+                <span class="timeline-company">Veterans United Home Loans</span>
+                <span class="timeline-date">May – August 2024</span>
+              </div>
+              <ul class="feature-list">
+                <li>Worked in a team of 6, utilizing Agile methodologies and pair programming.</li>
+                <li>Developed and maintained RESTful APIs using the .NET MVC framework and Test-Driven Development (TDD).</li>
+                <li>Managed code with GitLab and Azure DevOps for version control and CI/CD integration.</li>
+                <li>Utilized Visual Studio and Mia-Platform for development, debugging, and project management.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Data Engineer Intern</h3>
+                <span class="timeline-company">World Agricultural Economic and Environmental Services</span>
+                <span class="timeline-date">January – May 2024</span>
+              </div>
+              <ul class="feature-list">
+                <li>Performed data cleaning and transformation using Python and SQL.</li>
+                <li>Created and maintained ETL pipelines for large agricultural datasets.</li>
+                <li>Assisted in data analysis and visualization using Python libraries.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Kyle Young</p>
-  </footer>
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">University of Missouri - Columbia</h3>
+            <span class="card-badge">Expected May 2025</span>
+          </div>
+          <div class="card-body">
+            <p class="education-degree">Bachelor of Science in Computer Science</p>
+            <div class="education-details">
+              <h4>Relevant Coursework</h4>
+              <div class="tag-container">
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Database Systems</span>
+                <span class="tag">Software Engineering</span>
+                <span class="tag">Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="src/js/scripts.js"></script>
+      <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-category-title">Programming Languages</h3>
+            <div class="tag-container">
+              <span class="tag">Swift</span>
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">SQL</span>
+              <span class="tag">C#</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-category-title">Technologies & Tools</h3>
+            <div class="tag-container">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">Visual Studio</span>
+              <span class="tag">Xcode</span>
+              <span class="tag">Jira</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-category-title">Methodologies</h3>
+            <div class="tag-container">
+              <span class="tag">Agile/Scrum</span>
+              <span class="tag">Test-Driven Development</span>
+              <span class="tag">Object-Oriented Programming</span>
+              <span class="tag">RESTful API Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <p>&copy; 2025 Kyle Young. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
