@@ -1,32 +1,20 @@
-/* Base Styles */
+/* Base Styles - Always Dark Theme */
 :root {
   --system-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --primary-color: #0071e3;
-  --text-primary: #1d1d1f;
-  --text-secondary: #86868b;
-  --background: #ffffff;
-  --card-bg: #f5f5f7;
-  --card-hover: #e5e5ea;
-  --border-color: #d2d2d7;
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1a6;
+  --background: #000000;
+  --card-bg: #1c1c1e;
+  --card-hover: #2c2c2e;
+  --border-color: #38383a;
   --success: #34c759;
   --error: #ff3b30;
   --warning: #ff9500;
   --info: #007aff;
   --radius: 12px;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --text-primary: #f5f5f7;
-    --text-secondary: #a1a1a6;
-    --card-bg: #1c1c1e;
-    --card-hover: #2c2c2e;
-    --border-color: #38383a;
-  }
 }
 
 /* Base Styles */
